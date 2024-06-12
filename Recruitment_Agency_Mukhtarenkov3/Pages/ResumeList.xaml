@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Recruitment_Agency_Mukhtarenkov3.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Список резюме">
+      Title="Список резюме" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -24,6 +24,7 @@
             <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
         <DataGrid x:Name="DataGridResume" Grid.ColumnSpan="5" Grid.RowSpan="4" IsReadOnly="True" AutoGenerateColumns="False">
+            
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID резюме" Width="70" Binding="{Binding IDResume}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Имя"  Width="80" Binding="{Binding Name}"></DataGridTextColumn>
@@ -33,18 +34,20 @@
                 <DataGridTextColumn Header="Номер телефона" Width="120" Binding="{Binding PhoneNumber}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Навыки/Способности" Width="130" Binding="{Binding Proficiences}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Почта" Width="120" Binding="{Binding Mail}"></DataGridTextColumn>
+         
                 <DataGridTemplateColumn Width="auto">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-
+                            
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
+                
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="btnAdd" ToolTipService.ShowOnDisabled="True" Content="Добавить" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4" Style="{StaticResource Save}" Click="btnAdd_Click" ></Button>
         <Button x:Name="btnDelete" ToolTipService.ShowOnDisabled="True" Content="Удалить" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="4" Style="{StaticResource Delete}" Click="btnDelete_Click"></Button>
-
+      
 
     </Grid>
 </Page>

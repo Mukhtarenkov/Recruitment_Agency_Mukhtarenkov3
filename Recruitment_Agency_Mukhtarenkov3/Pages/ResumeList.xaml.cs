@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace Recruitment_Agency_Mukhtarenkov3.Pages
 {
@@ -32,6 +34,7 @@ namespace Recruitment_Agency_Mukhtarenkov3.Pages
                 btnAdd.ToolTip = "У вас нет прав";
                 btnDelete.IsEnabled = false;
                 btnDelete.ToolTip = "У вас нет прав";
+              
             }
             else
             {
@@ -42,21 +45,24 @@ namespace Recruitment_Agency_Mukhtarenkov3.Pages
                         case 1:
                             btnAdd.IsEnabled = true;
                             btnDelete.IsEnabled = true;
+                            
                             break;
                         case 2:
                             btnAdd.IsEnabled = false;
                             btnAdd.ToolTip = "У вас нет прав";
                             btnDelete.IsEnabled = false;
                             btnDelete.ToolTip = "У вас нет прав";
+                          
                             break;
                         case 3:
                             btnAdd.IsEnabled = true;
                             btnDelete.IsEnabled = true;
-
+                            
                             break;
                         default:
                             btnAdd.IsEnabled = false;
                             btnDelete.IsEnabled = false;
+                            
                             break;
                     }
                 }
@@ -69,7 +75,7 @@ namespace Recruitment_Agency_Mukhtarenkov3.Pages
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MyFrame.Navigate(new ResumeADD());
+            Manager.MyFrame.Navigate(new ResumeADD(null));
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -89,6 +95,16 @@ namespace Recruitment_Agency_Mukhtarenkov3.Pages
                 {
                     MessageBox.Show(ex.Message.ToString());
                 }
+            }
+        }
+
+
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Visibility== Visibility.Visible) 
+            {
+                recruitment_agencyEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DataGridResume.ItemsSource = recruitment_agencyEntities.GetContext().Resume.ToList().ToList();
             }
         }
     }

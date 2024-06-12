@@ -55,7 +55,7 @@
         <Style TargetType="Button" x:Key="Save">
             <Style.Setters>
                 <Setter Property="Height" Value="30"></Setter>
-                <Setter Property="Width" Value="120"></Setter>
+                <Setter Property="Width" Value="150"></Setter>
                 <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
                 <Setter Property="FontSize" Value="20"></Setter>
                 <Setter Property="FontWeight" Value="Bold"></Setter>

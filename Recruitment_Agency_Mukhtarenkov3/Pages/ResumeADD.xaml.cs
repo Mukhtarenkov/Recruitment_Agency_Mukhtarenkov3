@@ -20,20 +20,28 @@ namespace Recruitment_Agency_Mukhtarenkov3.Pages
     /// </summary>
     public partial class ResumeADD : Page
     {
-        public ResumeADD()
+        private Resume _currentResume = new Resume();
+        public ResumeADD(Resume selectedResume)
         {
             InitializeComponent();
+            DataContext = _currentResume;
+            if (selectedResume != null);
+            _currentResume = selectedResume;
         }
+
+      
+
         private void btnCreate_Click(object sender, RoutedEventArgs e)
         {
+           
             try
             {
                 Resume userBDJ = new Resume()
                 {
                     Name = Name.Text,
-                    FamilyName = FamilyName.Text,
-                    DadsName = DadsName.Text,
-                    Education = Education.Text,
+                  FamilyName = FamilyName.Text,
+                   DadsName = DadsName.Text,
+                   Education = Education.Text,
                     PhoneNumber = PhoneNumber.Text,
                     Proficiences = Proficiencies.Text,
                     Mail = Mail.Text
@@ -44,7 +52,7 @@ namespace Recruitment_Agency_Mukhtarenkov3.Pages
             }
             catch
             {
-                MessageBox.Show("Ошибка при добавлении данных!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+               MessageBox.Show("Ошибка при добавлении данных!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
         }

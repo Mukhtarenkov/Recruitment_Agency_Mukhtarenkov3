@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Recruitment_Agency_Mukhtarenkov3.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Список собеседований">
+      Title="Список собеседований" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -25,9 +25,9 @@
         </Grid.RowDefinitions>
         <DataGrid x:Name="DataGridSobesedovanie" Grid.ColumnSpan="5" Grid.RowSpan="4" IsReadOnly="True" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Номер строки собеседования" Width="180" Binding="{Binding ID}"></DataGridTextColumn>
+
                 <DataGridTextColumn Header="Номер строки резюме"  Width="150" Binding="{Binding Resume}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Номер строки Вакансии" Width="150" Binding="{Binding Vacancy}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Номер строки Вакансии" Width="100" Binding="{Binding IDVacancy}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Дата" Width="200" Binding="{Binding Date}"></DataGridTextColumn>
                 <DataGridTemplateColumn Width="auto">
 

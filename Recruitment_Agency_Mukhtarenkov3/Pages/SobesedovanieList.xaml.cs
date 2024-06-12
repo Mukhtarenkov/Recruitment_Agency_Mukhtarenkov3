@@ -23,6 +23,7 @@ namespace Recruitment_Agency_Mukhtarenkov3.Pages
         public SobesedovanieList()
         {
             InitializeComponent();
+            
             DataGridSobesedovanie.ItemsSource = recruitment_agencyEntities.GetContext().sobesedovanie.ToList();
 
             if (Manager._currentUser == null)
@@ -115,6 +116,12 @@ namespace Recruitment_Agency_Mukhtarenkov3.Pages
         {
             Window vacancy = (new VacancyWindow());
             vacancy.Show();
+        }
+
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            recruitment_agencyEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+            DataGridSobesedovanie.ItemsSource = recruitment_agencyEntities.GetContext().sobesedovanie.ToList().ToList();
         }
     }
 }

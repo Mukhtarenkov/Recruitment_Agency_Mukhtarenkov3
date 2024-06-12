@@ -1,21 +1,22 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
+
 namespace UnitTestProject1
 {
     [TestClass]
     public class UnitTest1
     {
         [TestMethod]
-        public void TestLoginRight()
+        public void Authorization1()
         {
-            string Password = "123";
-            string Login = "Manager";
+            string Password = "soiskatel";
+            string Login = "soiskatel";
            
             Assert.AreEqual(Password, Login);
         }
         [TestMethod]
-        public void TestLoginWrong()
+        public void Authorization2()
         {
             string Password = "";
             string Login = "";

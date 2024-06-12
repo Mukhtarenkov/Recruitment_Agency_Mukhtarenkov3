@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Recruitment_Agency_Mukhtarenkov3.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-       Title="Список вакансий">
+       Title="Список вакансий" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
         <Grid.ColumnDefinitions>
