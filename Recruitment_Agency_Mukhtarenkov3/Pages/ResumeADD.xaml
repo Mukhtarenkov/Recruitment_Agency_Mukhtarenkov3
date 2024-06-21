@@ -22,14 +22,14 @@
 
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.ColumnSpan="2" Grid.RowSpan="3" Width="700" >
-            <StackPanel Orientation="Vertical"  Width="300">
-                <TextBlock Text="Имя" Width="100" Height="40" HorizontalAlignment="Right" ></TextBlock>
-                <TextBlock Text="Фамилия" Width="100" Height="40" HorizontalAlignment="Right"></TextBlock>
-                <TextBlock Text="Отчество" Width="100" Height="40" HorizontalAlignment="Right" ></TextBlock>
-                <TextBlock Text="Образование" Width="100" Height="40" HorizontalAlignment="Right" ></TextBlock>
-                <TextBlock Text="Телефонный номер" Width="130" Height="40" HorizontalAlignment="Right" ></TextBlock>
-                <TextBlock Text="Навыки, способности" Width="100" Height="40" HorizontalAlignment="Right" FontSize="10" ></TextBlock>
-                <TextBlock Text="Почта" Width="100" Height="40" HorizontalAlignment="Right" ></TextBlock>
+            <StackPanel Orientation="Vertical"  Width="400">
+                <TextBlock Text="Имя"  Style="{StaticResource generaltxtblock}" HorizontalAlignment="Right" ></TextBlock>
+                <TextBlock Text="Фамилия" Style="{StaticResource generaltxtblock}" HorizontalAlignment="Right"></TextBlock>
+                <TextBlock Text="Отчество" Style="{StaticResource generaltxtblock}" HorizontalAlignment="Right" ></TextBlock>
+                <TextBlock Text="Образование" Style="{StaticResource generaltxtblock}" HorizontalAlignment="Right" Width="200" ></TextBlock>
+                <TextBlock Text="Телефонный номер" Style="{StaticResource generaltxtblock}" HorizontalAlignment="Right" Width="300" ></TextBlock>
+                <TextBlock Text="Навыки, способности" Style="{StaticResource generaltxtblock}" HorizontalAlignment="Right" Width="340" ></TextBlock>
+                <TextBlock Text="Почта" Style="{StaticResource generaltxtblock}" HorizontalAlignment="Right" ></TextBlock>
 
             </StackPanel>
             <Separator Background="Transparent" Width="20"/>

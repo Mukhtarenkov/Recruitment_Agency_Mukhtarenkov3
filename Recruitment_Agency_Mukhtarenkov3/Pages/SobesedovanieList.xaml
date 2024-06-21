@@ -27,7 +27,7 @@
             <DataGrid.Columns>
 
                 <DataGridTextColumn Header="Номер строки резюме"  Width="150" Binding="{Binding Resume}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Номер строки Вакансии" Width="100" Binding="{Binding IDVacancy}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Номер строки Вакансии" Width="170" Binding="{Binding Vacancy}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Дата" Width="200" Binding="{Binding Date}"></DataGridTextColumn>
                 <DataGridTemplateColumn Width="auto">
 

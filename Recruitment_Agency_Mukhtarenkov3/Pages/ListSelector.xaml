@@ -11,11 +11,11 @@
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
             <StackPanel Orientation="Vertical">
-                <Button x:Name="btnresumelist" Content="Список Резюме" Width="300" Height="70" Style="{StaticResource btnList}" Click="btnresumelist_Click"/>
+                <Button x:Name="btnresumelist" Content="Список Резюме" Width="350" Height="70" Style="{StaticResource btnList}" Click="btnresumelist_Click"/>
                 <Separator Width="100" Background="Transparent"/>
-                <Button x:Name="btnvacancylist" Content="Список вакансий"  Width="300" Height="70" Style="{StaticResource btnList}" Click="btnvacancylist_Click"/>
+                <Button x:Name="btnvacancylist" Content="Список вакансий"  Width="350" Height="70" Style="{StaticResource btnList}" Click="btnvacancylist_Click"/>
                 <Separator Width="100" Background="Transparent"/>
-                <Button x:Name="btnsobesedovaniyalist" Content="Список собеседований" Width="300" Height="70" Style="{StaticResource btnList}" Click="btnsobesedovaniyalist_Click"/>
+                <Button x:Name="btnsobesedovaniyalist" Content="Список собеседований" Width="350" Height="70" Style="{StaticResource btnList}" Click="btnsobesedovaniyalist_Click"/>
             </StackPanel>
 
         </StackPanel>

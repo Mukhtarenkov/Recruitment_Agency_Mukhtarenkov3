@@ -22,12 +22,12 @@
 
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.ColumnSpan="2" Grid.RowSpan="3" Width="700" >
-            <StackPanel Orientation="Vertical"  Width="300">
-                <TextBlock Text="Вакансия" Width="100" Height="40" HorizontalAlignment="Right" ></TextBlock>
-                <TextBlock Text="Наниматель" Width="100" Height="40" HorizontalAlignment="Right"></TextBlock>
-                <TextBlock Text="Спецификации" Width="110" Height="40" HorizontalAlignment="Right" ></TextBlock>
-                <TextBlock Text="Принадлежность организации" Width="170" Height="40" HorizontalAlignment="Right" ></TextBlock>
-                <TextBlock Text="Контактные данные" Width="140" Height="40" HorizontalAlignment="Right" ></TextBlock>
+            <StackPanel Orientation="Vertical"  Width="500">
+                <TextBlock Text="Вакансия" Style="{StaticResource generaltxtblock}" HorizontalAlignment="Right" ></TextBlock>
+                <TextBlock Text="Наниматель" Style="{StaticResource generaltxtblock}" Width="200" HorizontalAlignment="Right"></TextBlock>
+                <TextBlock Text="Спецификации" Style="{StaticResource generaltxtblock}" Width="250" HorizontalAlignment="Right" ></TextBlock>
+                <TextBlock Text="Принадлежность организации" Style="{StaticResource generaltxtblock}" Width="450" HorizontalAlignment="Right" ></TextBlock>
+                <TextBlock Text="Контактные данные" Style="{StaticResource generaltxtblock}" Width="300" HorizontalAlignment="Right" ></TextBlock>
 
             </StackPanel>
             <Separator Background="Transparent" Width="20"/>

@@ -6,10 +6,10 @@
     <Application.Resources>
         <Style TargetType="TextBlock" x:Key="generaltxtblock">
             <Style.Setters>
-                <Setter Property="Height" Value="20"></Setter>
-                <Setter Property="Width" Value="120"></Setter>
+                <Setter Property="Height" Value="40"></Setter>
+                <Setter Property="Width" Value="170"></Setter>
                 <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
-                <Setter Property="FontSize" Value="15"></Setter>
+                <Setter Property="FontSize" Value="30"></Setter>
                 <Setter Property="FontWeight" Value="Bold"></Setter>
                 <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                 <Setter Property="VerticalAlignment" Value="Center"></Setter>
@@ -18,10 +18,10 @@
         </Style>
         <Style TargetType="TextBox" x:Key="generaltxtbox">
             <Style.Setters>
-                <Setter Property="Height" Value="20"></Setter>
-                <Setter Property="Width" Value="120"></Setter>
+                <Setter Property="Height" Value="40"></Setter>
+                <Setter Property="Width" Value="170"></Setter>
                 <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
-                <Setter Property="FontSize" Value="15"></Setter>
+                <Setter Property="FontSize" Value="30"></Setter>
                 <Setter Property="FontWeight" Value="Bold"></Setter>
                 <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                 <Setter Property="VerticalAlignment" Value="Center"></Setter>
@@ -30,10 +30,10 @@
         </Style>
         <Style TargetType="Button" x:Key="generalbtn">
             <Style.Setters>
-                <Setter Property="Height" Value="25"></Setter>
-                <Setter Property="Width" Value="120"></Setter>
+                <Setter Property="Height" Value="40"></Setter>
+                <Setter Property="Width" Value="170"></Setter>
                 <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
-                <Setter Property="FontSize" Value="15"></Setter>
+                <Setter Property="FontSize" Value="25"></Setter>
                 <Setter Property="FontWeight" Value="Bold"></Setter>
                 <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                 <Setter Property="VerticalAlignment" Value="Center"></Setter>
@@ -44,7 +44,7 @@
                 <Setter Property="Height" Value="70"></Setter>
                 <Setter Property="Width" Value="300"></Setter>
                 <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
-                <Setter Property="FontSize" Value="15"></Setter>
+                <Setter Property="FontSize" Value="30"></Setter>
                 <Setter Property="FontWeight" Value="Bold"></Setter>
                 <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                 <Setter Property="VerticalAlignment" Value="Center"></Setter>
@@ -54,10 +54,10 @@
 
         <Style TargetType="Button" x:Key="Save">
             <Style.Setters>
-                <Setter Property="Height" Value="30"></Setter>
+                <Setter Property="Height" Value="40"></Setter>
                 <Setter Property="Width" Value="150"></Setter>
                 <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
-                <Setter Property="FontSize" Value="20"></Setter>
+                <Setter Property="FontSize" Value="30"></Setter>
                 <Setter Property="FontWeight" Value="Bold"></Setter>
                 <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                 <Setter Property="VerticalAlignment" Value="Center"></Setter>
@@ -67,9 +67,9 @@
         <Style TargetType="Button" x:Key="Delete">
             <Style.Setters>
                 <Setter Property="Height" Value="40"></Setter>
-                <Setter Property="Width" Value="120"></Setter>
+                <Setter Property="Width" Value="150"></Setter>
                 <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
-                <Setter Property="FontSize" Value="20"></Setter>
+                <Setter Property="FontSize" Value="30"></Setter>
                 <Setter Property="FontWeight" Value="Bold"></Setter>
                 <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                 <Setter Property="VerticalAlignment" Value="Center"></Setter>

@@ -22,10 +22,10 @@
 
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.ColumnSpan="2" Grid.RowSpan="3" Width="700" >
-            <StackPanel Orientation="Vertical"  Width="300">
-                <TextBlock Text="Резюме" Width="100" Height="40" HorizontalAlignment="Right" ></TextBlock>
-                <TextBlock Text="Вакансия" Width="100" Height="40" HorizontalAlignment="Right"></TextBlock>
-                <TextBlock Text="Дата" Width="100" Height="40" HorizontalAlignment="Right" ></TextBlock>
+            <StackPanel Orientation="Vertical"  Width="400">
+                <TextBlock Text="Резюме" Style="{StaticResource generaltxtblock}" HorizontalAlignment="Right" ></TextBlock>
+                <TextBlock Text="Вакансия" Style="{StaticResource generaltxtblock}" HorizontalAlignment="Right"></TextBlock>
+                <TextBlock Text="Дата" Style="{StaticResource generaltxtblock}" HorizontalAlignment="Right" ></TextBlock>
                 <TextBox Text="пример даты: 2024-10-14 00:00:00.000" Width="300" Height="40" HorizontalAlignment="Right" Background="Transparent" ></TextBox>
 
 
