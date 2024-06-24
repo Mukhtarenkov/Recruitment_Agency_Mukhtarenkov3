@@ -118,6 +118,10 @@ namespace Recruitment_Agency_Mukhtarenkov3.Pages
             vacancy.Show();
         }
 
-       
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            recruitment_agencyEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+            DataGridSobesedovanie.ItemsSource = recruitment_agencyEntities.GetContext().sobesedovanie.ToList().ToList();
+        }
     }
 }
