@@ -37,6 +37,6 @@
             </StackPanel>
         </StackPanel>
 
-        <Button x:Name="btnCreate" Content="зарегистрировать" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="1" Width="200" Click="btnCreate_Click" Style="{StaticResource Save}"></Button>
+        <Button x:Name="btnCreate" Content="зарегистрировать" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="1" Width="300" Click="btnCreate_Click" Style="{StaticResource Save}"></Button>
     </Grid>
 </Page>

@@ -1,0 +1,7 @@
+ public static recruitment_agencyEntities _context;
+        public static recruitment_agencyEntities GetContext()
+        {
+            if (_context == null)
+                _context = new recruitment_agencyEntities();
+            return _context;
+        }
